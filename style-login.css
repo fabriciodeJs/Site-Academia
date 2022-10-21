@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
+    
     margin: 0%;
-    padding: 0%; 
-  
+    padding: 0%;
+      
+        font-family: 'Courier New', Courier, monospace;
 }
 #topo{
     margin: 0%;
@@ -12,7 +14,7 @@
     justify-content:space-between;
     background-color: black;
     align-items: center;
-    font-family: 'Playfair Display', serif;
+    
     
 }
 #cabecalho{
@@ -35,55 +37,101 @@ a:hover{
     color: red;
     transition: 0.3s all;
 }
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-*{
-    margin: 0%;
-    padding: 0%; 
-  
-}
-#topo{
-    margin: 0%;
-    padding: 15px;
-    display: flex;
-    flex-direction:row ;
-    justify-content:space-between;
-    background-color: black;
-    align-items: center;
-    font-family: 'Playfair Display', serif;
+#titulo{
+    flex-direction: column;
+    font-size: 20px;
     
 }
-#cabecalho{
-    margin-left: 20px;
-    font-size: 20px;
+li{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 1000;
 }
-#titulo{
-    width: 300px;
-    height: 80px;
-}
-.cabecalho-menu-item{
-    color: white;
-    margin-right: 50px;
-    padding: 5px;
-    font-size: 18px;
-    text-decoration: none;
-   
+a{
+    color: black;
 }
 a:hover{
     color: red;
     transition: 0.3s all;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    height: 830px;
+}
+h2{
+    color: white;
+    font-size: 45px;
+    line-height: 50px;
+    padding: 1000;
+    white-space: nowrap;
 
+}
+span{
+    color: red;
+}
+img{
+    width: 760px;
+    margin-left: 30%;
+}
+#inscrevase{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+#inscrevase:hover{
+    background-color: red;
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form [ type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: red;
+    color: white;
+    font-size: bold;
+}
+form [ type="submit"]:hover{
+   cursor: pointer;
+}
+input{
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 70%;
+    margin-top: 13%;
+    margin-bottom: 10%;
+    
+}
+main{
+    margin: none;
+    background-image:url(complementos/Banner\ Neon\ Gym\ \(2\).png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+fieldset{
+    background-color: black;
+    border: none;
 
-
-
-
-
-
-
+}
 
 #h4{
-    color: black;
+    color: white;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
@@ -96,9 +144,7 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     font-family: sans-serif;
-    font-size: black;
-  
-    
+    font-size: white;
 }
 #rodape1{
     display: flex;
@@ -116,7 +162,7 @@ a:hover{
 .a{
     padding: 15px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .icones{
     font-size: 30px;
@@ -142,3 +188,4 @@ a:hover{
 .icones .fa-twitter{
     color: blue;
     padding: 10x;
+}
