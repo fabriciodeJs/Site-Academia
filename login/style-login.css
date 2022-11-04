@@ -1,0 +1,158 @@
+/* geral*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+
+/* nav*/
+header, .navbar{
+    background-color: black;
+}
+#botao{
+    background-color: white;
+}
+#btn{
+    align-items: center;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo{
+    width: 230px;
+}
+.navbar-brand{
+    padding: 0;
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+#navbar-links a{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+#about-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#team-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#services-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#contact-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#cadastro{
+    font-size: 20px;
+    color: yellow;
+}
+#p{
+    margin-top: 10px;
+}
+/*corpo*/
+main{
+    display: flex;
+    height: 750px;
+    margin: none;
+    background-image:url(fundo/Banner\ Neon\ Gym\ \(2\).png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#container-input{
+    display: flex;
+    flex-direction: column;
+    padding-top: 18%;
+    padding-left: 70%;
+
+}
+#titulo-input{
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.input{
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    border: none;
+    font-weight: bold;
+    
+}
+#cpf{
+    width: 350px;
+}
+#senha{
+    width: 350px;
+}
+#btn{
+    width: 250px;
+}
+img{
+    width: 760px;
+    margin-left: 30%;
+}
+
+#inscrevase:hover{
+    background-color: red;
+    color: black;
+}
+
+form [ type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: red;
+    color: white;
+    font-size: bold;
+}
+form [ type="submit"]:hover{
+   cursor: pointer;
+}
+
+/*rodape*/
+#rodape-coluna-1{
+    justify-content: center;
+    align-items: center;
+   
+}
+#rodape-coluna-2{
+    justify-content: center;
+    align-items: center;
+   
+}
+#rodape-coluna-3{
+    justify-content: center;
+    align-items: center;
+  
+}
+#sub-rodape{
+    background-color: black;
+}
+footer{
+    background-color: black;
+    
+}
+h6{
+    color: white;
+}

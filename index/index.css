@@ -1,0 +1,237 @@
+/*Geral*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+p,li{
+    color: white;
+    font-size: 14px;
+}
+/* Barra de navegação*/
+header, .navbar{
+    background-color: black;
+}
+#botao{
+    background-color: white;
+}
+#btn{
+    align-items: center;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo{
+    width: 230px;
+}
+.navbar-brand{
+    padding: 0;
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+#navbar-links a{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+#about-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#team-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#services-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#contact-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+/*Slider*/
+.container-fluid{
+    padding: 0;
+}
+#mainSlider .carousel-ineer #mainSlider .carousel-item{
+    height: 90vh;
+}
+#mainSlider .carousel-caption{
+    top: 30%;
+}
+.carousel-indicators .active{
+    background-color: red;
+}
+/* Sobre a Academia*/
+.col-md-6{
+    margin-top: 60px;
+}
+.about-title{
+    font-size: 25px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+#about-list li{
+    line-height: 30px;
+}
+#about-list i{
+    color: red;
+    margin-right: 15px;
+}
+/* planos*/
+.card-body{
+    text-align: center;
+    background-color: red;
+
+}
+.card-text{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.col-md-3{
+    margin: 3%;
+    padding: -90px;
+    margin-left: 5%;
+}
+.main-title{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    color: red;
+    font-size: 60px;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+#news-area{
+    text-align: center;
+    background-color: red;   
+}
+news-area p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    
+}
+#tel-input{
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+#titleh3{
+    color: white;
+}
+#paragrafo{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+#titulo-btn{
+   margin-right: 200px;
+}
+#news-btn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid red;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -115px;
+    position: absolute;
+    transition: .5s;
+
+}
+#news-btn:hover{
+    background-color: white;
+    color: black;
+}
+#call-area{
+    background-color: black;
+    text-transform: uppercase;
+}
+
+#call-area .row{
+    display: block;
+    text-align: center;
+    height: 10px;
+}
+#call-area p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+.main-btn{
+    border: 1px solid red;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: 20px;
+    position: absolute;
+    transition: .5s;
+    margin-top: 5px;
+}
+.main-btn:hover{
+    background-color: white;
+    color: black;
+}
+/* rodape*/
+#rodape-coluna-1{
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+#rodape-coluna-2{
+    justify-content: center;
+    align-items: center;
+    margin-top: -14px;
+}
+#rodape-coluna-3{
+    justify-content: center;
+    align-items: center;
+    margin-top: -13px;
+}
+#sub-rodape{
+    background-color: black;
+    height: 60px;
+    
+}
+footer{
+    background-color: black;
+    
+}
+h6{
+    color: white;
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0%;
+    padding: 0%; 
+    background-color: black;
+}
+body{
+    margin: 0;
+}
+
+#topo{
+    margin: 0%;
+    padding: 15px;
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-between;
+    background-color: black;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    
+}
+#cabecalho{
+    margin-left: 20px;
+    font-size: 20px;
+}
+#titulo{
+    width: 300px;
+    height: 80px;
+}
+.cabecalho-menu-item{
+    color: white;
+    margin-right: 50px;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+   
+}
+a:hover{
+    color: red;
+    transition: 0.3s all;
+}
+
+#imgs{
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: black;
+}
+.imgs{
+    align-items: center;
+    margin: 30px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    background-color: red;
+}
+#forms{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+input{
+    margin: 20px;
+    border: 5px solid;
+    border-radius: 40px;
+    border-color: red;
+    width: 350px;
+    height: 50px;
+    padding: 2px;
+}
+#paragrafos{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.paragrafos{
+    
+    font-size: 25px;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.h3{
+    color: red;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    justify-content: space-between; 
+}
+#botao{
+    height: 100%;
+    text-align: center;
+ 
+}
+button{
+    border-color: red;
+    margin-top: 100px;
+    height: 80px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 5px 5px 2px 2px red;
+   
+}
+header{
+    background-color: black;
+}
+#titulo_input{
+    margin-top: 100px;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+fieldset{
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+#h4{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 45px;
+}
+#rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: white;
+}
+#rodape1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 29%;
+    margin-top: 45px;
+    
+}
+#rodape2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 28%;
+    margin-top: 45px;
+}
+.a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.icones{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+    
+}
+.icones .fa-facebook{
+    color: blue;
+    padding: 10px;
+   
+}
+.icones .fa-instagram{
+    color: saddlebrown;
+    padding: 10px;
+}
+.icones .fa-linkedin{
+    color: blue;
+    padding: 10px;
+}
+.icones .fa-twitter{
+    color: blue;
+    padding: 10x;
+}

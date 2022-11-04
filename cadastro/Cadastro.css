@@ -1,0 +1,120 @@
+/* geral*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8%;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+/* nav*/
+header, .navbar{
+    background-color: black;
+}
+#botao{
+    background-color: white;
+}
+#btn{
+    align-items: center;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo{
+    width: 230px;
+}
+.navbar-brand{
+    padding: 0;
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+#navbar-links a{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+#about-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#team-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#services-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#contact-menu:hover{
+    color: red;
+    transition: 0.3s all;
+}
+#cadastro{
+    font-size: 20px;
+    color: yellow;
+}
+#p{
+    margin-top: 10px;
+}
+/*corpo*/
+h1{
+    text-align: center;
+
+}
+.form-control{
+    margin-top: 20px;
+    margin-left: 0;
+    width: 400px;
+    border-radius: 5px;
+}
+
+
+
+
+.custom-select{
+    margin-left: 54px;
+    margin-top: 20px;
+}
+.form-group{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+#btn{
+    margin-left: 46%;
+}
+/*rodape*/
+#rodape-coluna-1{
+    justify-content: center;
+    align-items: center;
+   
+}
+#rodape-coluna-2{
+    justify-content: center;
+    align-items: center;
+   
+}
+#rodape-coluna-3{
+    justify-content: center;
+    align-items: center;
+  
+}
+#sub-rodape{
+    background-color: black;
+}
+footer{
+    background-color: black;
+    
+}
+h6{
+    color: white;
+}
+

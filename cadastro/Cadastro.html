@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Cadastro.css">
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://kit.fontawesome.com/546ab0e97a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency">
+                </a>
+                <button id="botao" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span id="btn" class="navbar-toggler-icon">|||</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <dir class="navbar-nav">
+                        <a href="#" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="#" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
+                        <a href="#" class="nav-item nav-link" id="services-menu">Matricule-se</a>
+                        <a href="#" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
+                    </dir>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cadastro de Aluno</h1>
+        <form>
+            <dir class="row">
+                <div class="col">
+                    <input id="nome" type="text" class="form-control" placeholder="Primeiro Nome">
+                </div>
+                <div class="col">
+                    <input id="sobrenome" type="text" class="form-control" placeholder="Sobrenome">
+                </div>
+                <div class="col">
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                </div>
+            </dir>
+            <dir class="row">
+                <div class="col">
+                    <input id="celular" type="tel" class="form-control" placeholder="Telefone - Celular">
+                </div>
+                <div class="col">
+                    <input id="nascimento" type="date" class="form-control">
+
+                </div>
+                <div class="col">
+                    <input id="cpf" type="number" class="form-control" placeholder="cpf">
+                </div>
+            </dir>
+            <dir class="row">
+                <div class="col">
+                    <input id="endereco" type="text" class="form-control" placeholder="Endereço">
+                </div>
+                <div class="col">
+                    <input id="estado" type="text" class="form-control" placeholder="Estado">
+                </div>
+                <div class="col">
+                    <input id="cidade" type="text" class="form-control" placeholder="Cidade">
+                </div>
+            </dir>
+            <div class="row">
+                <div class="col">
+                    <select id="sexo" class="custom-select" style="width: 200px;">
+                        <option selected>Sexo</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Indefinido</option>
+                    </select>
+
+                </div>
+                <div class="col">
+                    <input type="radio"  class="form-check-input" id="doenca">
+                    <label class="form-check-label">Não tenho Doenças</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="termos" id="termos" required>
+                    <label class="form-check-label">
+                        Aceito os temos
+                    </label>
+                </div>
+            </div>
+            <button id="btn" class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
