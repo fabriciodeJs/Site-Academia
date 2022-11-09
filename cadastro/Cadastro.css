@@ -3,6 +3,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin-top: 8%;
+    background-color: black;
 }
 .row{
     margin: 0;
@@ -14,6 +15,12 @@ body{
 header, .navbar{
     background-color: black;
 }
+main{
+    margin: 0;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 #botao{
     background-color: white;
 }
@@ -23,6 +30,7 @@ header, .navbar{
 #nav-container{
     padding-top: 0;
     padding-bottom: 0;
+    
 }
 #logo{
     width: 230px;
@@ -74,7 +82,9 @@ h1{
     width: 400px;
     border-radius: 5px;
 }
-
+#check{
+    padding-left: 600px;
+}
 
 
 
@@ -90,6 +100,7 @@ h1{
 }
 #btn{
     margin-left: 46%;
+    margin-top: 100px;
 }
 /*rodape*/
 #rodape-coluna-1{
@@ -109,6 +120,36 @@ h1{
 }
 #sub-rodape{
     background-color: black;
+}
+footer{
+    background-color: black;   
+}
+h6{
+    color: white;
+}
+.conteudo-rodape{
+    color: white;
+}
+
+#rodape-coluna-1{
+    justify-content: center;
+    align-items: center;
+ 
+}
+#rodape-coluna-2{
+    justify-content: center;
+    align-items: center;
+ 
+}
+#rodape-coluna-3{
+    justify-content: center;
+    align-items: center;
+    
+}
+#sub-rodape{
+    background-color: black;
+    height: 60px;
+    
 }
 footer{
     background-color: black;

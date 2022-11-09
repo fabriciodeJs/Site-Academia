@@ -40,10 +40,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <dir class="navbar-nav">
-                        <a href="#" class="nav-item nav-link" id="about-menu">Unidades</a>
-                        <a href="#" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
-                        <a href="#" class="nav-item nav-link" id="services-menu">Matricule-se</a>
-                        <a href="#" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
+                        <a href="/Trabalho final/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="/Trabalho final/login/Login.html" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
+                        <a href="/Trabalho final/cadastro/Cadastro.html" class="nav-item nav-link" id="services-menu">Matricule-se</a>
+                        <a href="/Trabalho final/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
                     </dir>
                 </div>
             </nav>
@@ -95,20 +95,35 @@
                         <option value="2">Feminino</option>
                         <option value="3">Indefinido</option>
                     </select>
-
-                </div>
-                <div class="col">
-                    <input type="radio"  class="form-check-input" id="doenca">
-                    <label class="form-check-label">Não tenho Doenças</label>
                 </div>
             </div>
-
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="termos" id="termos" required>
-                    <label class="form-check-label">
-                        Aceito os temos
-                    </label>
+            <div id="check" class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Doenças</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="naoTem" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Não Tenho
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="cardiaco">
+                        <label class="form-check-label" for="gridRadios2">
+                            Cardiaca
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="diabetes">
+                        <label class="form-check-label" for="gridRadios3">
+                            Diabetes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="outra">
+                        <label class="form-check-label" for="gridRadios3">
+                            outra
+                        </label>
+                    </div>
                 </div>
             </div>
             <button id="btn" class="btn btn-primary" type="submit">Submit form</button>
@@ -117,8 +132,50 @@
 
 
     </main>
+    <footer id="rodape-geral" class="page-footer">
+        <div style="height: 150px;" >
+            <div id="rodape"  class="container">
+                <div  class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fa-brands fa-facebook text-white mr-4"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-white mr-4"></i></a>
+                        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/"><i class="fa-brands fa-linkedin text-white mr-4"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-white mr-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <div id="sub-rodape" class="container text-center text-md-left">
+            <div class="row">
+                <div id="rodape-coluna-1" class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Braço de Ferro</h6>
+                    <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 135px; height: 2px">
+                    <p class="conteudo-rodape">aaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <div id="rodape-coluna-2" class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Braço de Ferro</h6>
+                    <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 135px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a class="conteudo-rodape" href="#">HTML</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">CSS</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">JAVASCRIPT</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">BOOTSTRAP</a></li>
+                    </ul>
+                </div>
+                <div id="rodape-coluna-3" class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Braço de Ferro</h6>
+                    <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 135px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a class="conteudo-rodape" href="#">HTML</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">CSS</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">JAVASCRIPT</a></li>
+                        <li class="my-2"><a class="conteudo-rodape" href="#">BOOTSTRAP</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+        <script src="Cadastro.js"></script>
 </body>
 
 </html>

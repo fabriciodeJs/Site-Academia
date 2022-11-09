@@ -207,6 +207,9 @@ news-area p{
     background-color: white;
     color: black;
 }
+fieldset{
+    color: white solid;
+}
 /* rodape*/
 #rodape-coluna-1{
     justify-content: center;
@@ -233,5 +236,8 @@ footer{
     
 }
 h6{
+    color: white;
+}
+.conteudo-rodape{
     color: white;
 }
