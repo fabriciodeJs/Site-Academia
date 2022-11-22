@@ -1,9 +1,17 @@
-/* geral*/
-
-body{
-    font-family: 'Roboto', sans-serif;
-    margin-top: 8%;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
     background-color: black;
+}
+body{
+    background-image: url(complementos/fundo-unidades.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    background-color: white;
 }
 .row{
     margin: 0;
@@ -11,15 +19,13 @@ body{
 .container{
     padding: 70px 0;
 }
-/* nav*/
+p,li{
+    color: white;
+    font-size: 14px;
+}
+/* Barra de navegação*/
 header, .navbar{
     background-color: black;
-}
-main{
-    margin: 0;
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 #botao{
     background-color: white;
@@ -30,7 +36,6 @@ main{
 #nav-container{
     padding-top: 0;
     padding-bottom: 0;
-    
 }
 #logo{
     width: 230px;
@@ -64,97 +69,61 @@ main{
     color: red;
     transition: 0.3s all;
 }
-#cadastro{
-    font-size: 20px;
-    color: yellow;
-}
-#p{
-    margin-top: 10px;
-}
-/*corpo*/
 h1{
+    background-color: white;
+    margin-top: 100px;
+    font-family: serif;
+    font-size: 40px;
+    color: black;
+}
+#mapa{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#pesquisa{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+}
+input{
+    background-color: white;
+    width: 600px;
+    height: 40px;
+    margin: 5px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 35%;
+    border-radius: 20px;
+}
+button{
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    margin-left: 43%;
+    margin-top: 30px;
+}
 
-}
-.form-control{
-    margin-top: 20px;
-    margin-left: 0;
-    width: 400px;
-    border-radius: 5px;
-}
-.col-sm-10{
-    padding-right: 200px;
-}
-#check{
-    margin-top: 25px;
-}
-#login{
-    padding-left: 285px;
-}
-#quarta-linha{
-    display: flex;
-    justify-content: space-between;
-}
-.custom-select{
-    margin-left: 54px;
-    margin-top: 20px;
-}
-.form-group{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
-}
-#div-senha{
-    margin-left: 235px;
-}
-#submit{
-    margin-left: 46%;
-    margin-top: 100px;
-}
-/*rodape*/
-#rodape-coluna-1{
-    justify-content: center;
-    align-items: center;
-   
-}
-#rodape-coluna-2{
-    justify-content: center;
-    align-items: center;
-   
-}
-#rodape-coluna-3{
-    justify-content: center;
-    align-items: center;
-  
-}
-#sub-rodape{
-    background-color: black;
-}
-footer{
-    background-color: black;   
-}
-h6{
-    color: white;
-}
-.conteudo-rodape{
-    color: white;
-}
+
+
 
 #rodape-coluna-1{
     justify-content: center;
     align-items: center;
- 
+    margin-top: -10px;
 }
 #rodape-coluna-2{
     justify-content: center;
     align-items: center;
- 
+    margin-top: -14px;
 }
 #rodape-coluna-3{
     justify-content: center;
     align-items: center;
-    
+    margin-top: -13px;
 }
 #sub-rodape{
     background-color: black;
@@ -168,4 +137,6 @@ footer{
 h6{
     color: white;
 }
-
+.conteudo-rodape{
+    color: white;
+}

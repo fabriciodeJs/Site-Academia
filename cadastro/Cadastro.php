@@ -1,3 +1,32 @@
+<?php
+
+        include_once('conexao.php');
+
+        if(isset($_POST['submit'])){
+
+            
+
+            $nome = $_POST['nome'];
+            $sobrenome = $_POST['sobrenome'];
+            $email = $_POST['email'];
+            $telefone = $_POST['telefone'];
+            $nascimento = $_POST['nascimento'];
+            $cpf = $_POST['cpf'];
+            $endereco = $_POST['endereco'];
+            $estado = $_POST['estado'];
+            $cidade = $_POST['cidade'];
+            $sexo = $_POST['sexo'];
+            $senha = $_POST['senha'];
+
+            $resulte = mysqli_query($conexao, "INSERT INTO login(cpf, senha) VALUES ('$cpf', '$senha')");
+
+            $result = mysqli_query($conexao, "INSERT INTO alunos(NOME, SOBRENOME, EMAIL, TELEFONE, NASCIMENTO, ENDERECO, ESTADO, CIDADE, SEXO)
+                                      VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$nascimento', '$endereco', '$estado', '$cidade', '$sexo')");
+        }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -21,7 +50,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
-    <script src="js/progressbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://kit.fontawesome.com/546ab0e97a.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +58,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="index.html" class="navbar-brand">
+                <a href="/Trabalho final/index/index.html" class="navbar-brand">
                     <img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency">
                 </a>
                 <button id="botao" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -39,12 +67,15 @@
                     <span id="btn" class="navbar-toggler-icon">|||</span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <dir class="navbar-nav">
-                        <a href="/Trabalho final/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
-                        <a href="/Trabalho final/login/Login.html" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
-                        <a href="/Trabalho final/cadastro/Cadastro.html" class="nav-item nav-link" id="services-menu">Matricule-se</a>
-                        <a href="/Trabalho final/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
-                    </dir>
+                    <div class="navbar-nav">
+                        <a href="/Trabalho final/unidades/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="/Trabalho final/login/Login.php" class="nav-item nav-link" id="team-menu">Area do
+                            Aluno</a>
+                        <a href="/Trabalho final/cadastro/Cadastro.php" class="nav-item nav-link"
+                            id="services-menu">Matricule-se</a>
+                        <a href="/Trabalho final/atendimento/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale
+                            Conosco</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -52,94 +83,74 @@
 
     <main>
         <h1>Cadastro de Aluno</h1>
-        <form>
-            <dir class="row">
+        <form action="Cadastro.php" method="POST" id="registerForm" onsubmit="pegarValores()">
+            <div class="row">
                 <div class="col">
-                    <input id="nome" type="text" class="form-control" placeholder="Primeiro Nome">
+                    <input id="nome" name="nome" type="text" class="form-control" placeholder="Primeiro Nome" >
                 </div>
                 <div class="col">
-                    <input id="sobrenome" type="text" class="form-control" placeholder="Sobrenome">
+                    <input id="sobrenome" name="sobrenome" type="text" class="form-control" placeholder="Sobrenome" >
                 </div>
                 <div class="col">
-                    <input id="email" type="email" class="form-control" placeholder="Email">
+                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" >
                 </div>
-            </dir>
-            <dir class="row">
+            </div>
+            <div class="row">
                 <div class="col">
-                    <input id="celular" type="tel" class="form-control" placeholder="Telefone - Celular">
+                    <input id="telefone" name="telefone" type="tel" class="form-control" placeholder="Telefone - Celular">
                 </div>
                 <div class="col">
-                    <input id="nascimento" type="date" class="form-control">
+                    <input id="nascimento" name="nascimento" type="date" class="form-control">
 
                 </div>
                 <div class="col">
-                    <input id="cpf" type="number" class="form-control" placeholder="cpf">
+                    <input id="cpf" type="number" name="cpf" class="form-control" placeholder="cpf" >
                 </div>
-            </dir>
-            <dir class="row">
-                <div class="col">
-                    <input id="endereco" type="text" class="form-control" placeholder="Endereço">
-                </div>
-                <div class="col">
-                    <input id="estado" type="text" class="form-control" placeholder="Estado">
-                </div>
-                <div class="col">
-                    <input id="cidade" type="text" class="form-control" placeholder="Cidade">
-                </div>
-            </dir>
+            </div>
             <div class="row">
                 <div class="col">
-                    <select id="sexo" class="custom-select" style="width: 200px;">
-                        <option selected>Sexo</option>
-                        <option value="1">Masculino</option>
-                        <option value="2">Feminino</option>
-                        <option value="3">Indefinido</option>
-                    </select>
+                    <input id="endereco" type="text" name="endereco" class="form-control" placeholder="Endereço">
+                </div>
+                <div class="col">
+                    <input id="estado" type="text" name="estado" class="form-control" placeholder="Estado">
+                </div>
+                <div class="col">
+                    <input id="cidade" type="text" name="cidade" class="form-control" placeholder="Cidade">
                 </div>
             </div>
-            <div id="check" class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Doenças</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="naoTem" checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Não Tenho
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="cardiaco">
-                        <label class="form-check-label" for="gridRadios2">
-                            Cardiaca
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="diabetes">
-                        <label class="form-check-label" for="gridRadios3">
-                            Diabetes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="outra">
-                        <label class="form-check-label" for="gridRadios3">
-                            outra
-                        </label>
+            <div id="quarta-linha">
+                <div id="sele" class="row">
+                    <div class="col">
+                        <select id="sexo" name="sexo" class="custom-select" style="width: 200px;" >
+                            <option selected>Sexo</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                            <option value="I">Indefinido</option>
+                        </select>
                     </div>
                 </div>
+                <div id="div-senha" class="col">
+                    <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha" onchange="comparar()" required>
+                </div>
+                <div class="col">
+                    <input id="senha-dois" name="senhaconf" type="password" class="form-control" placeholder="Confirme sua Senha" onchange="comparar()" required>
+                </div>
             </div>
-            <button id="btn" class="btn btn-primary" type="submit">Submit form</button>
+            <input id="submit" name="submit" class="btn btn-primary" type="submit"></input>
         </form>
 
 
 
     </main>
     <footer id="rodape-geral" class="page-footer">
-        <div style="height: 150px;" >
-            <div id="rodape"  class="container">
-                <div  class="row py-4 d-flex align-items-center">
+        <div style="height: 150px;">
+            <div id="rodape" class="container">
+                <div class="row py-4 d-flex align-items-center">
                     <div class="col-md-12 text-center">
                         <a href="#"><i class="fa-brands fa-facebook text-white mr-4"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram text-white mr-4"></i></a>
-                        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/"><i class="fa-brands fa-linkedin text-white mr-4"></i></a>
+                        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/"><i
+                                class="fa-brands fa-linkedin text-white mr-4"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter text-white mr-4"></i></a>
                     </div>
                 </div>
@@ -172,10 +183,11 @@
                         <li class="my-2"><a class="conteudo-rodape" href="#">JAVASCRIPT</a></li>
                         <li class="my-2"><a class="conteudo-rodape" href="#">BOOTSTRAP</a></li>
                     </ul>
+                </div>
             </div>
-        </div>
     </footer>
-        <script src="Cadastro.js"></script>
+    
+    <script src="Cadastro.js"></script>
 </body>
 
 </html>

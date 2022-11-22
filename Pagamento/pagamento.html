@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
-    <link rel="stylesheet" href="style-login.css">
-    <title>Area do Aluno</title>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style-pagamento.css">
+    <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <!-- Estilos -->
+    <script src="progressbar.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <!-- Scripts-->
+    <link rel="stylesheet" href="Style-pagamento.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://kit.fontawesome.com/546ab0e97a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
-    <script src="js/progressbar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <script src="https://kit.fontawesome.com/546ab0e97a.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
+  </head>
+  <body style="min-width: 372px;">
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand">
-                    <a href="/Trabalho final/index/index.html"><img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency"></a>
+                    <img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency">
                 </a>
                 <button id="botao" class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false"
@@ -43,41 +39,35 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <dir class="navbar-nav">
-                        <a href="/Trabalho final/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
-                        <a href="/Trabalho final/login/Login.html" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
-                        <a href="/Trabalho final/cadastro/Cadastro.html" class="nav-item nav-link" id="services-menu">Matricule-se</a>
-                        <a href="/Trabalho final/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
+                        <a href="#" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="#" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
+                        <a href="#" class="nav-item nav-link" id="services-menu">Matricule-se</a>
+                        <a href="#" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
                     </dir>
                 </div>
             </nav>
         </div>
     </header>
+    <main style="margin-top: 70px; margin-bottom: 60px; color: black;">
 
-    <main>
-        <div id="container-input">
-            <div id="titulo-input">
-                <H2><span>Bem vindo</span></H2>
-                <h2>Aluno(a)</h2>
-                <form>
-                    <input id="cpf" class="input" type="text" placeholder="                                    CPF">
-                    <input id="senha" class="input" type="password"
-                        placeholder="                                  SENHA">
-                    <input id="btn" class="input" type="submit" value="Entrar >" onclick="logar(); return false">
-                    <p id="p"><a id="cadastro" href="#">Cadastra-se</a> Caso não seja aluno</p>
-                </form>
-            </div>
+        <div style="background-color: white; font-size: black" id="produtos"  >
+            <h2>Planos</h2>
         </div>
-    </main>
 
-    <footer id="rodape-geral" class="page-footer">
-        <div style="height: 150px;">
-            <div id="rodape" class="container">
-                <div class="row py-4 d-flex align-items-center">
+        <div id="carrinho" style="color: black;">
+
+        </div>
+
+
+    </main>
+   <!--- <footer id="rodape-geral" class="page-footer">
+        <div style="height: 150px;" >
+            <div id="rodape"  class="container">
+                <div  class="row py-4 d-flex align-items-center">
                     <div class="col-md-12 text-center">
                         <a href="#"><i class="fa-brands fa-facebook text-white mr-4"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram text-white mr-4"></i></a>
-                        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/"><i
-                                class="fa-brands fa-linkedin text-white mr-4"></i></a>
+                        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/"><i class="fa-brands fa-linkedin text-white mr-4"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter text-white mr-4"></i></a>
                     </div>
                 </div>
@@ -109,10 +99,11 @@
                         <li class="my-2"><a class="conteudo-rodape" href="#">JAVASCRIPT</a></li>
                         <li class="my-2"><a class="conteudo-rodape" href="#">BOOTSTRAP</a></li>
                     </ul>
-                </div>
             </div>
-    </footer>
-    <script src="login.js"></script>
-</body>
-
+        </div>
+    </footer>-->
+    <script src="pagamento.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
 </html>

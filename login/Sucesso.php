@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,17 +16,28 @@
             text-align: center;
 
         }
+
+        .nome-usuario {
+            color: red
+        }
     </style>
 
 </head>
 <body>
-      
-    
+
+        <?php if(isset($_SESSION['ativa'])){ ?>
+
+ 
     <h1>Sucesso</h1>
-    <h2>Bem - Vindo</h2>
+    <h2>
+        Bem - Vindo 
+        <?php  echo $_SESSION['nome'];   ?>
+    </h2>
 
+       <?php }else{
+        header("location: login.php");
+       } ?>      
 
-
-
+    <script src="success.js"></script>
 </body>
 </html>
