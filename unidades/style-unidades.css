@@ -70,6 +70,8 @@ header, .navbar{
     transition: 0.3s all;
 }
 h1{
+    display: flex;
+    justify-content: center;
     background-color: white;
     margin-top: 100px;
     font-family: serif;
@@ -92,11 +94,11 @@ h1{
 input{
     background-color: white;
     width: 600px;
-    height: 40px;
+    height: 30px;
     margin: 5px;
     margin-top: 50px;
     display: flex;
-    margin-left: 35%;
+    margin-left: 25%;
     border-radius: 20px;
 }
 button{

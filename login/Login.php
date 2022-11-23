@@ -1,13 +1,7 @@
 <?php
 require_once "conexao.php";
 include_once "conexao.php";
-
-
-
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,10 +46,10 @@ include_once "conexao.php";
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="/Trabalho final/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
-                        <a href="/Trabalho final/login/Login.html" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
-                        <a href="/Trabalho final/cadastro/Cadastro.html" class="nav-item nav-link" id="services-menu">Matricule-se</a>
-                        <a href="/Trabalho final/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
+                    <a href="/Trabalho final/unidades/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="/Trabalho final/login/Login.php" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
+                        <a href="/Trabalho final/cadastro/Cadastro.php" class="nav-item nav-link" id="services-menu">Matricule-se</a>
+                        <a href="/Trabalho final/atendimento/Atendimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
                     </div>
                 </div>
             </nav>

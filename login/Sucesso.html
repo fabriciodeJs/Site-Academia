@@ -1,8 +1,3 @@
-<?php
-    session_start();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,19 +19,11 @@
 
 </head>
 <body>
-
-        <?php if(isset($_SESSION['ativa'])){ ?>
-
- 
     <h1>Sucesso</h1>
     <h2>
         Bem - Vindo 
-       
+        <span class="nome-usuario" id="nomeUsuario"></span>
     </h2>
-
-       <?php }else{
-        header("location: login.php");
-       } ?>      
 
     <script src="success.js"></script>
 </body>

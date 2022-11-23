@@ -1,45 +1,18 @@
-<?php
-
-        include_once('conexao.php');
-
-        if(isset($_POST['submit'])){
-
-            
-
-            $nome = $_POST['nome'];
-            $sobrenome = $_POST['sobrenome'];
-            $email = $_POST['email'];
-            $telefone = $_POST['telefone'];
-            $nascimento = $_POST['nascimento'];
-            $cpf = $_POST['cpf'];
-            $endereco = $_POST['endereco'];
-            $estado = $_POST['estado'];
-            $cidade = $_POST['cidade'];
-            $sexo = $_POST['sexo'];
-            $senha = $_POST['senha'];
-
-            $resulte = mysqli_query($conexao, "INSERT INTO login(cpf, senha) VALUES ('$cpf', '$senha')");
-
-            $result = mysqli_query($conexao, "INSERT INTO alunos(NOME, SOBRENOME, EMAIL, TELEFONE, NASCIMENTO, ENDERECO, ESTADO, CIDADE, SEXO)
-                                      VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$nascimento', '$endereco', '$estado', '$cidade', '$sexo')");
-        }
-
-
-?>
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Area do Aluno</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="index.css">
     <!-- Scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -55,11 +28,12 @@
 </head>
 
 <body>
+
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="/Trabalho final/index/index.html" class="navbar-brand">
-                    <img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency">
+                <a href="index.html" class="navbar-brand">
+                    <a href="/Trabalho final/index/index.html"><img id="logo" src="logo/logo_10-removebg-preview.png" alt="hDC Agency"></a>
                 </a>
                 <button id="botao" class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false"
@@ -68,10 +42,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="/Trabalho final/unidades/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
-                        <a href="/Trabalho final/login/Login.php" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
-                        <a href="/Trabalho final/cadastro/Cadastro.php" class="nav-item nav-link" id="services-menu">Matricule-se</a>
-                        <a href="/Trabalho final/atendimento/Atendimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
+                        <a href="/Trabalho final/unidades.html" class="nav-item nav-link" id="about-menu">Unidades</a>
+                        <a href="/Trabalho final/login/Login.html" class="nav-item nav-link" id="team-menu">Area do Aluno</a>
+                        <a href="/Trabalho final/cadastro/Cadastro.html" class="nav-item nav-link" id="services-menu">Matricule-se</a>
+                        <a href="/Trabalho final/Atedimento.html" class="nav-item nav-link" id="contact-menu">Fale Conosco</a>
                     </div>
                 </div>
             </nav>
@@ -79,66 +53,21 @@
     </header>
 
     <main>
-        <h1>Cadastro de Aluno</h1>
-        <form action="Cadastro.php" method="POST" id="registerForm" onsubmit="pegarValores()">
-            <div class="row">
-                <div class="col">
-                    <input id="nome" name="nome" type="text" class="form-control" placeholder="Primeiro Nome" >
-                </div>
-                <div class="col">
-                    <input id="sobrenome" name="sobrenome" type="text" class="form-control" placeholder="Sobrenome" >
-                </div>
-                <div class="col">
-                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" >
-                </div>
+        <div id="container-input">
+            <div id="titulo-input">
+                <H2><span>Bem vindo</span></H2>
+                <h2>Aluno(a)</h2>
+                <form id="loginForm" onsubmit="logar(event)">
+                    <input id="cpf" class="input" type="text" placeholder="                                    CPF">
+                    <input id="senha" class="input" type="password"
+                        placeholder="                                  SENHA">
+                    <input id="btn" class="input" type="submit" value="Entrar >">
+                    <p id="p"><a id="cadastro" href="#">Cadastra-se</a> Caso não seja aluno</p>
+                </form>
             </div>
-            <div class="row">
-                <div class="col">
-                    <input id="telefone" name="telefone" type="tel" class="form-control" placeholder="Telefone - Celular">
-                </div>
-                <div class="col">
-                    <input id="nascimento" name="nascimento" type="date" class="form-control">
-
-                </div>
-                <div class="col">
-                    <input id="cpf" type="number" name="cpf" class="form-control" placeholder="cpf" >
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input id="endereco" type="text" name="endereco" class="form-control" placeholder="Endereço">
-                </div>
-                <div class="col">
-                    <input id="estado" type="text" name="estado" class="form-control" placeholder="Estado">
-                </div>
-                <div class="col">
-                    <input id="cidade" type="text" name="cidade" class="form-control" placeholder="Cidade">
-                </div>
-            </div>
-            <div id="quarta-linha">
-                <div id="sele" class="row">
-                    <div class="col">
-                        <select id="sexo" name="sexo" class="custom-select" style="width: 200px;" >
-                            <option selected>Sexo</option>
-                            <option value="M">Masculino</option>
-                            <option value="F">Feminino</option>
-                            <option value="I">Indefinido</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="div-senha" class="col">
-                    <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha" onchange="comparar()" required>
-                </div>
-                <div class="col">
-                    <input id="senha-dois" name="senhaconf" type="password" class="form-control" placeholder="Confirme sua Senha" onchange="comparar()" required>
-                </div>
-            </div>
-            <input id="submit" name="submit" class="btn btn-primary" type="submit"></input>
-        </form>
-
-
-
+        </div>
     </main>
+
     <footer id="rodape-geral" class="page-footer">
         <div style="height: 150px;">
             <div id="rodape" class="container">
@@ -153,13 +82,12 @@
                 </div>
             </div>
         </div>
-
         <div id="sub-rodape" class="container text-center text-md-left">
             <div class="row">
                 <div id="rodape-coluna-1" class="col-md-3 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">Braço de Ferro</h6>
                     <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 135px; height: 2px">
-                    <p class="conteudo-rodape">aaaaaaaaaaaaaaaaaaaaaa</p>
+                    <p>aaaaaaaaaaaaaaaaaaaaaa</p>
                 </div>
                 <div id="rodape-coluna-2" class="col-md-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">Braço de Ferro</h6>
@@ -183,8 +111,7 @@
                 </div>
             </div>
     </footer>
-    
-    <script src="Cadastro.js"></script>
+    <script src="/Trabalho final/cadastro/Cadastro.js"></script>
 </body>
 
 </html>

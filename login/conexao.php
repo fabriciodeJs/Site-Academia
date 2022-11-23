@@ -1,6 +1,6 @@
 <?php
 
-$dbHost = 'localHost';
+$dbHost = 'localhost';
 $dbUser = 'root';
 $dbSenha = '';
 $dbNome = 'bracodeferro';
